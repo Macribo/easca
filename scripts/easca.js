@@ -42,7 +42,7 @@ if (fadaMode===false){
 		$('.btn').click(function(){
 			var id = this.id
 			keyPressed = (this.innerHTML);
-			if (keyPressed=== "fadaí"){
+			if (keyPressed=== "fada"){
 				toggleKeyboard();
 				// alert('alt')
 			}
@@ -55,7 +55,7 @@ if (fadaMode===false){
 			}
 			else
 			$('#output').append(keyPressed)
-			if (id ==='return'){
+			if (id ==='undo'){
 				$('#output').empty();
 			
 			}
