@@ -10,7 +10,7 @@
 	position: fixed;
 	width:90%;
 	height:30%;
-	border:3px solid green;
+	/* border:3px solid green; */
 	margin:5%;
 	font-family: 'Urchlo Romhanach';
 	z-index: 1;
