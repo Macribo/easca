@@ -42,7 +42,7 @@ if (fadaMode===false){
 		$('.btn').click(function(){
 			var id = this.id
 			keyPressed = (this.innerHTML);
-			if (keyPressed=== "fada"){
+			if (keyPressed=== "Ᵹ"){
 				toggleKeyboard();
 				// alert('alt')
 			}
