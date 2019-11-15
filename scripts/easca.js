@@ -1,9 +1,8 @@
 $(document).ready(function () {
-	$('#alt-keyboard-container').hide();
+	$('#fada-mode').hide();
 	$('#caps-keyboard-container').hide();
+capsMode=false;
 
-	let fadaMode=false;
-	let capsMode=false;
 
 toggleCapsMode = ()=>{
 if (capsMode===true){
@@ -23,42 +22,48 @@ else{
 
 
 }
-	toggleKeyboard = ()=>{
-if (fadaMode===false){
-	$('#keyboard-container').hide();
-	$('#alt-keyboard-container').show();
-	// $('#keyboard-container').show();
-	// $('#alt-keyboard-container').hide();
-	fadaMode=true;	
+	fadaMode = ()=>{
+
+		$('#keyboard-container').hide();
+		$('#fada-mode').show();
+
+		$('.btn').on( 'click' , function(e) {
+			if (keyPressed != "Ᵹ"){
+			$('#keyboard-container').show();
+			$('#fada-mode').hide();}
+		})
 }
-	else{
-		$('#keyboard-container').show();
-	$('#alt-keyboard-container').hide();
-	fadaMode=false;
-	}
-}
+// 	else{
+// 		$('#keyboard-container').show();
+// 	$('#alt-keyboard-container').hide();
+// 	fadaMode=false;
+// 	}
+// }
 
 	let keyPressed;
-		$('.btn').click(function(){
-			var id = this.id
-			keyPressed = (this.innerHTML);
-			if (keyPressed=== "Ᵹ"){
-				toggleKeyboard();
-				// alert('alt')
-			}
-			else if(
-				
-				(this.id === "caps")
-			){
-				toggleCapsMode()
-
-			}
-			else
-			$('#output').append(keyPressed)
-			if (id ==='undo'){
-				$('#output').empty();
+	
+		$('.btn').on( 'touchend' , function(e) {
 			
-			}
+				var id = this.id
+				keyPressed = (this.innerHTML);
+				if (keyPressed=== "Ᵹ"){
+					fadaMode();
+					// alert('alt')
+				}
+				else if(
+					
+					(this.id === "caps")
+				){
+					toggleCapsMode()
+	
+				}
+				else
+				$('#output').append(keyPressed)
+				if (id ==='undo'){
+					$('#output').empty();
+				
+				}
+		});
 			// if (id === 'undo'){
 			// 	let temp = document.getElementById('#output');
 			// 	alert(temp)
@@ -79,5 +84,3 @@ if (fadaMode===false){
 
 
 
-
-});

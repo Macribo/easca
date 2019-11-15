@@ -45,7 +45,7 @@
 
 
 }
-#keyboard-container, #caps-keyboard-container, #alt-keyboard-container{
+#keyboard-container, #caps-keyboard-container, #fada-mode{
 	position:fixed;
 	bottom:5%;
 	background-color:rgba(144, 144, 144, 0.52);
