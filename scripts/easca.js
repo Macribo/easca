@@ -173,7 +173,6 @@ function holdKeyDown() {
 		showWhatKeys(keyPressed);
 
 		myVar = setTimeout(holdKeyDown, 1200);
-		console.log(event.clientX, event.clientY)
 	
 	})
 		$('.btn').on( 'touchend' , function(e) {
