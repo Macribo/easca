@@ -190,11 +190,16 @@ function holdKeyDown() {
 	
 				}
 				else
-				$('#output').append(keyPressed)
 				if (id ==='undo'){
-					$('#output').empty();
-				
+					var temp = $('#output').text();
+					temp.toString();
+					// alert(temp)
+				str=	temp.substring(0, temp.length - 1);
+				// alert(str)
+				$('#output').text(str) ;
 				}
+				else
+				$('#output').append(keyPressed);
 		keysToShow= [];
 	
 			});
