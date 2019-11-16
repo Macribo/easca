@@ -27,7 +27,7 @@ else{
 		$('#keyboard-container').hide();
 		$('#fada-mode').show();
 
-		$('.btn').on( 'click' , function(e) {
+		$('.btn').on( 'touchend' , function(e) {
 			if (keyPressed != "Ᵹ"){
 			$('#keyboard-container').show();
 			$('#fada-mode').hide();}
@@ -39,11 +39,16 @@ else{
 // 	fadaMode=false;
 // 	}
 // }
-
+function myFunction() {
+	alert("Hello");
+  }
 	let keyPressed;
+	$('.btn').on('touchstart', function(){
+		myVar = setTimeout(myFunction, 3000)
 	
+	})
 		$('.btn').on( 'touchend' , function(e) {
-			
+			clearTimeout(myVar)
 				var id = this.id
 				keyPressed = (this.innerHTML);
 				if (keyPressed=== "Ᵹ"){
