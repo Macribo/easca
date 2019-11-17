@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	new ClipboardJS('#copy');
 
 	let keyPressed;
 
@@ -184,10 +184,11 @@ function holdKeyDown() {
 				}
 				else if(
 					
-					(this.id === "caps")
+					(this.id === "copy")
 				){
-					toggleCapsMode()
-	
+					// toggleCapsMode()
+
+					
 				}
 				else
 				if (id ==='undo'){
