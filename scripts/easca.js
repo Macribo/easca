@@ -148,17 +148,10 @@ function holdKeyDown() {
 	
 	// alert(keysToShow)
 	for (let i = 0; i<keysToShow.length; i++){
-		let newButton = `<button id=`+keysToShow[i]+` onclick = "				$					var temp = $('#output').text();
-		temp.toString();
-		// alert(temp)
-	str=	temp.substring(0, temp.length - 1);
-	// alert(str)
-	$('#output').text(str) ;('#output').append(this.id);
+		let newButton = `<button id=`+keysToShow[i]+` onclick = "				$('#output').append(this.id);
 		" type="button" class="btn btn-right-logo btn-outline-dark">`+keysToShow[i]+`</button>`
-						
+		
 		$('#j-line').append(newButton)	
-		$('#j-line').fadeOut();
-
 	}
 
 	$('#j-line').fadeIn();
@@ -206,9 +199,9 @@ function holdKeyDown() {
 				// alert(str)
 				$('#output').text(str) ;
 				}
-				else
+				else if( $('#j-line:hidden')){
 				$('#output').append(keyPressed);
-		keysToShow= [];
+		keysToShow= [];}
 	
 			});
 			// if (id === 'undo'){
