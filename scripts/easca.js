@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
 	let keyPressed;
 
 	let keysToShow = [];
@@ -25,9 +27,9 @@ $(document).ready(function () {
 					keysToShow.push('D');
 					break;
 			
-					case 'e': keysToShow.push('a');
-					keysToShow.push('á');
-					keysToShow.push('A');
+					case 'e': keysToShow.push('e');
+					keysToShow.push('é');
+					keysToShow.push('E');
 					break;
 			
 					case 'f': keysToShow.push('f');
@@ -98,11 +100,6 @@ $(document).ready(function () {
 		}
 	
 	}
-	
-	
-	
-	
-	
 
 
 	$('#fada-mode').hide();
@@ -144,14 +141,17 @@ else{
 // 	fadaMode=false;
 // 	}
 // }
+
+
 function holdKeyDown() {
 	// alert(keyPressed);
 	
 	// alert(keysToShow)
 	for (let i = 0; i<keysToShow.length; i++){
-		let newButton = `<button type="button" class="btn btn-right-logo btn-outline-dark">`+keysToShow[i]+`</button>`
+		let newButton = `<button id=`+keysToShow[i]+` onclick = "				$('#output').append(this.id);
+		" type="button" class="btn btn-right-logo btn-outline-dark">`+keysToShow[i]+`</button>`
 		
-		$('#j-line').append(newButton)
+		$('#j-line').append(newButton)	
 	}
 
 	$('#j-line').fadeIn();
