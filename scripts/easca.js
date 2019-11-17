@@ -150,7 +150,13 @@ function holdKeyDown() {
 	for (let i = 0; i<keysToShow.length; i++){
 		let newButton = `<button id=`+keysToShow[i]+` onclick = "				$('#output').append(this.id);
 		" type="button" class="btn btn-right-logo btn-outline-dark">`+keysToShow[i]+`</button>`
-		
+		var temp = $('#output').text();
+		temp.toString();
+		// alert(temp)
+	str=	temp.substring(0, temp.length - 1);
+	// alert(str)
+	$('#output').text(str) ;
+	}		
 		$('#j-line').append(newButton)	
 		$('#j-line').fadeOut();
 
@@ -201,9 +207,9 @@ function holdKeyDown() {
 				// alert(str)
 				$('#output').text(str) ;
 				}
-				else if($("#j-line:hidden")){
+				else
 				$('#output').append(keyPressed);
-		keysToShow= [];}
+		keysToShow= [];
 	
 			});
 			// if (id === 'undo'){
