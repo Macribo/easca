@@ -199,7 +199,8 @@ function holdKeyDown() {
 				// alert(str)
 				$('#output').text(str) ;
 				}
-				else if( $('#j-line:hidden')){
+				else if( $('#j-line'.is(':hidden'))){
+					alert("hidden")
 				$('#output').append(keyPressed);
 		keysToShow= [];}
 	
