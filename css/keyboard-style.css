@@ -45,22 +45,6 @@
 
 }
 
-.most-btns-during-dm-mode{
-	background-color:#858585;
-
-	color: rgb(27, 27, 27);
-	/* border:3px solid orange; */
-	/* padding-left:8px !important;  */
-
-
-}
-
-.special-btns-during-dm-mode{
-	color:rgb(73, 206, 33);
-	background-color:#716c80
-	
-	
-}
 #keyboard-container, #caps-keyboard-container, #fada-mode,#new-buttons{
 	position:fixed;
 	bottom:5%;
@@ -138,6 +122,32 @@
  
 }
 /* Webkit, Chrome and Safari */
+
+
+
+.most-btns-during-dm-mode{
+	background-color:#858585;
+
+	color: rgb(27, 27, 27);
+	/* border:3px solid orange; */
+	/* padding-left:8px !important;  */
+
+
+}
+
+.special-btns-during-dm-mode{
+	color:rgb(73, 206, 33);
+	background-color:#716c80
+	
+	
+}
+
+
+
+
+
+
+
 
 @-webkit-keyframes bounce {
 	0% {

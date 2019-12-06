@@ -14,12 +14,32 @@ $(document).ready(function () {
 
 
    let dmAgCainnt = true;
+   let justListen = true;
+let deirDM = [
+    `"Do what is beyond your strength even should you fail sometimes."
+    <br>Charles Stewart Parnell`,
+    `According to <a href="https://storyarchaeology.com/">this</a> the Irish are Brits.
+    And the Brits are Celts.`,``,``,``,``,``,``,``
+
+]
+
+let keyPressedInDMmode;
 
    if(dmAgCainnt){
 
-$('.dm-says').html(`Do what is beyond your strength even should you fail sometimes."
-<br>Charles Stewart Parnell`
-) 
+    $('#output').fadeOut();
+    if(justListen){
+    $('.btn').addClass('most-btns-during-dm-mode');
+    $('#saighead-deas').addClass('special-btns-during-dm-mode');
+    
+}
+    $('.btn').on('touchstart', function(){
+		keyPressedInDMmode = (this.innerHTML);
+	// alert(keyPressedInDMmode)
+;	})
+
+$('.dm-says').html(deirDM[0]);
+
 
    };
 
