@@ -1,0 +1,82 @@
+
+I read a Dungeon & Dragons campaign in which player's quest is to inquisit sightings of strange monsters in the wildeness. Turned out to be a 'dungeon crawl' in a crashlanded alien capitalship. Read another story, where the Game Master throughout the campaign - had a villain systematically slaughtering an entire Nation for ritual ascension to God-hood. 
+The party of players eventually stopped him by Astral-projecting to the appropriate realm and petitioning an established God to bless their weapons. Except the michevious party thief kept goofing around. Then he failed a saving throw vs the Deity wishing him out of existence. and simply faded away.
+
+Metal shit like that happened in our games sometimes too. D&D is far out.
+I could do something like that for a living, as one component of a larger enterprise.
+I mean, fuck man think of the merchandise!
+
+
+
+
+
+
+
+let uiLevel = 0;
+
+
+/*
+uiLevel determines the ui options and presentation;
+0 = none;
+1 = Gaeilge keyboard input ui;
+2 = button menu;
+3 = dial ui + label;
+4 =
+*/
+1
+// input-0;
+id="input-0"
+let legit_input_for_input-0 = ['n','ná','nái','náid'];
+let inchur = $("#input-0").val();
+for (var i = 0; i< legit_input_for_input-0.length){
+ if(inchur = legit_input_for_input-0[i])
+	alert("ceart: " + legit_input_for_input-0[]+" uiLevel++ " )
+	if(inchur = legit_input_for_input-0[3]{
+	alert("increment current-input-position")}
+}
+
+
+
+let current-input-position= 0;
+
+
+
+
+
+uiLeve1 === 2{
+
+/*
+eé|uú rɼ|ií tṫ|oó |pṗ
+aá|h7 sṡ|l´ dḋ| fḟ| gġ|
+cċ|n bḃ|mṁ  ,|.  !|?
+123|#@ |space| <-|
+*/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
